@@ -11,13 +11,13 @@ variables:
   azureServiceConnectionId: 'ds_em'
   
   # Web app name
-  webAppName: 'pyflasktuto'
+  webAppName: 'pyflask'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: 'pyflasktuto'
+  environmentName: 'pyflask'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
@@ -80,7 +80,7 @@ stages:
             displayName: 'Use Python version'
 
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : pyflasktuto'
+            displayName: 'Deploy Azure Web App : pyflask'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
