@@ -8,7 +8,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: 'a0e0e14f-d033-4b45-9104-bcd70731f5f7'
+  azureServiceConnectionId: 'DataScience_Widgets_RG'
   
   # Web app name
   webAppName: 'wapp-die1-ds-widgetproto001'
